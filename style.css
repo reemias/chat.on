@@ -6,6 +6,7 @@
 
 /* Estilos gerais */
 body {
+    background-color: #333;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -51,10 +52,29 @@ nav a {
 }
 
 .mensagens {
-    background-image: url("/img/fundo.jpg");
+    background: linear-gradient(to bottom, #808080, #d2b48c); /* Gradiente do cinza ao café claro */
+    background-size: cover;
+    background-repeat: no-repeat;
     padding: 20px;
-    height: 600px;
+    height: 500px;
+    display: flex; 
 }
+
+.caixo_bem_vindo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.bem_vindo {
+    opacity: 0.1; /* Ajuste a opacidade para quase transparente */
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
 
 /* Media Queries para responsividade */
 @media (max-width: 768px) {
