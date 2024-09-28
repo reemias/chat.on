@@ -27,7 +27,18 @@ nav a {
     text-decoration: none;
 }
 
-.butão, .butão-2 {
+.butão {
+    background-color: #4caf4f05;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+
+.butão-2 {
+    border-radius: 90px;
+    margin: 6px;
     background-color: #4CAF50;
     color: white;
     border: none;
@@ -35,7 +46,7 @@ nav a {
     cursor: pointer;
 }
 
-.butão:hover, .butão-2:hover {
+ .butão-2:hover {
     background-color: #45a049;
 }
 
@@ -43,12 +54,6 @@ nav a {
     display: flex;
     justify-content: center;
     padding: 10px;
-}
-
-.digitar {
-    flex: 1;
-    padding: 10px;
-    margin-right: 10px;
 }
 
 .mensagens {
@@ -70,8 +75,9 @@ nav a {
 
 .bem_vindo {
     opacity: 0.1; /* Ajuste a opacidade para quase transparente */
-    max-width: 100%;
-    max-height: 100%;
+    width: 100px;
+    height: 100px;
+    border-radius: 90px;
 }
 
 
@@ -83,6 +89,7 @@ nav a {
     }
 
     .butão, .butão-2 {
+        width: 100%;
         padding: 8px 16px;
     }
 
@@ -94,6 +101,7 @@ nav a {
     .digitar {
         margin-right: 0;
         margin-bottom: 10px;
+        padding: 50px;
     }
 }
 
@@ -108,11 +116,13 @@ nav a {
     }
 
     .barra {
-        padding: 5px;
+        flex-direction: column;
+        align-items: stretch;
     }
 
     .digitar {
-        padding: 8px;
+        padding: 50px;
+        
     }
 }
 
@@ -128,3 +138,34 @@ nav a {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+
+.logo img {
+    width: 272px;
+    height: 92px;
+}
+
+.search-bar {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /* Espaçamento entre os elementos */
+}
+
+.digitar, .search-button, .butão-2 {
+    height: 40px; /* Altura igual para todos os elementos */
+    padding: 0 70px; /* Espaçamento interno para os botões */
+    border: 1px solid #ccc; /* Borda para visualização */
+    border-radius: 4px; /* Bordas arredondadas */
+    font-size: 16px; /* Tamanho da fonte */
+}
+
+.digitar {
+    flex: 1; /* Faz o input ocupar o espaço restante */
+    min-width: 200px; /* Largura mínima para o input */
+    border-radius: 40px;
+}
+
+.search-button, .butão-2 {
+    flex-shrink: 0; /* Impede que os botões encolham */
+}
