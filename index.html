@@ -1,38 +1,41 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Google Clone</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header>
+        <h1>CHat.oN</h1>
+        <nav>
+            <a href="https://reemias.github.io/trabalho/">
+                <button class="butão-2">site do criador</button>
+            </a>
+            
+        </nav>
+        <a href="https://www.bing.com/chat?form=NTPCHB"><button class="butão">Pesquisa Google</button></a>
+    </header>
+    
+    <main class="mensagens">
+    
+        <div class="caixo_bem_vindo">
+            <img src="/img/person.jpg" class="bem_vindo">
+        </div>
+        <span id="mensagem"></span>
+    </main>
 
-<header>
-    <h1>CHat.oN</h1>
-    <nav>
-        <a href="https://reemias.github.io/trabalho/">
-            <button class="butão">site do criador</button>
-        </a>
-    </nav>
-</header>
+    <footer>
+        <div class="barra">
+            <input class="digitar" type="text" id="inputMensagem" placeholder="pesquisa aqui">
+            <button class="butão-2" id="botaoEnviar">enviar</button>
+            
+            
+        </div>
+    </footer>
 
-<main class="mensagens">
 
-    <div class="caixo_bem_vindo">
-        <img src="/img/fundo-3.jfif" class="bem_vindo">
-    </div>
-    <span id="mensagem"></span>
-</main>
-
-<footer>
-    <div class="barra">
-        <input class="digitar" type="text" id="inputMensagem">
-        <button class="butão-2" id="botaoEnviar">enviar</button>
-    </div>
-</footer>
-
-<script src="js.js"></script>
-
+    <script src="js.js"></script>
 </body>
 </html>
